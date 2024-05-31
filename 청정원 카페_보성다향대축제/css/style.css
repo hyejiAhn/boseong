@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&Black+Han+Sans&display=swap');
+html,body{font-family:'Ubuntu','Noto Sans KR',sans-serif ;}
+
+.header{position: fixed;width: 100%;left: 0;top: 0;height: 90px;z-index: 100;background-color: #fff;transition: all 0.5s;}
+.h_wrap{max-width: 84vw;margin: 0 auto;height: 100%;display: flex; align-items: center;}
+.logo{width: 5.4vw;}
+.logo img{width: 100%;}
+.nav{display: flex;justify-content: space-between;width: 100%; padding: 0 2vw; align-items: center;}
+.menu{display: flex;}
+.menu>li{margin: 0 1vw;}
+.menu>li>a{display: block;line-height: 90px; font-weight: bold;  font-family: "Gowun Batang", serif; font-size: 1.2em;}
+.sub{position: absolute;width: 100%; left: 0; top: 90px;background-color: #fff; border-top: 1px solid #eee;box-sizing: border-box; padding: 2vh 8vw;display: flex;justify-content: space-evenly;text-align: center;box-shadow: 0px 3px 10px rgba(0,0,0,0.02);overflow: hidden; font-size: 13px;}
+.sub li a{display: block;  font-family: "Gowun Batang", serif; font-size: 15px;}
+.sub li a img{width:100% ;}
+.sub li a:hover{text-decoration: underline;}
+
+.family{width: 9vw; position: relative;}
+.family button{width: 100%;height: 30px;text-align: left;background: url(../imgs/site_bar.png) no-repeat center bottom; background-size: 100% 3px; border: none; font-size: 17px;display: flex;justify-content: space-between; align-items: center; font-family: "Gowun Batang", serif; }
+.family button::after{content: "▼";font-size: 10px;margin-right: 10px; color: #333;}
+.family_list{position: absolute;width: 100%;border: 2px solid #000;margin-top: 15px;background-color: #fff;box-sizing: border-box;padding: 10px; font-size: 15px;line-height: 25px;z-index: 10;  font-family: "Gowun Batang", serif; }
+.m_nav{display: none;}
+
+/*main*/
+.main{width: 100%; height: 100vh;display: flex; justify-content: center; align-items: center; box-sizing: border-box;padding-top: 90px;position: relative;overflow: hidden;}
+.main_wrap{text-align: center;}
+.main_wrap>h2{font-size: 7.5vw;}
+
+.main_title1,.main_title2{transition: all 1s;}
+
+.slide_box{width: 24vw;margin:0 auto;position: relative;height:450px; }
+.slide_box img{width: 90%;position: absolute;left: 0; right: 0;margin: auto; bottom: 0; top: 0; }
+.slide_box::before{content: "["; font-weight: bold; font-size: 50px;position: absolute;left: -4vw; top:42%;}
+.slide_box::after{content: "]"; font-weight: bold; font-size: 50px;position: absolute;right: -4vw; top:42%;}
+
+.down_arr{position: absolute;right: 5vw; bottom: 10px;cursor: pointer;display: flex; align-items: flex-end;}
+.down_arr::before{content: "Let's see";font-weight: bold;margin-bottom: 10px;  font-family: "Gowun Batang", serif; font-size: 17px;}
+.down_arr img{width: 3vw;}
+.direct{position: absolute;left: 3vw;bottom: 20px;display: block;}
+.direct>div>p{font-weight: bold;line-height: 200%;margin-bottom: 5px;  font-family: "Gowun Batang", serif; }
+.direct>div>img{position: absolute;right: -30px; top: 0; height: 50px;}
+.imgbox{position: relative;}
+.imgbox::after{content: "▷";background-color: #fff; display: block;position: absolute;left: 0; right: 0; top: 0; bottom: 0; margin: auto;width: 30px; height: 30px;text-align: center;line-height: 30px;border-radius: 50%;}
+.imgbox>img{width: 10vw;min-width:150px ;}
+
+.contents{width: 100%;padding: 30px 3vw;box-sizing: border-box;overflow: hidden;}
+.conbox{height: 18vw;margin-bottom: 20px;}
+
+.conbox1{background: url(../imgs/line4.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox2{background: url(../imgs/line3.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox3{background: url(../imgs/line2.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox4{background: url(../imgs/line1.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox5{background: url(../imgs/line5.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox6{background: url(../imgs/line6.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox7{background: url(../imgs/line7.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox8{background: url(../imgs/line8.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox9{background: url(../imgs/line9.jpg) no-repeat center center ;background-attachment: fixed; background-size: cover;}
+.conbox>a{display: flex;width: 100%; height: 100%;justify-content: space-between; align-items: center;background-color: rgba(0,0,0,0.3);}
+.conbox>a>img{height: 3.5vw;margin-left: 3vw;}
+.contitle{width: 25vw;font-size: 2.6vw;color: #fff;  font-family: "Gowun Batang", serif; }
+.contitle>.slide-right::after{content: "＞";display: flex;width: 50px; height: 50px; border-radius: 50%;border: 1px solid #fff;justify-content: center;align-items: center; font-size: 15px;margin-top: 15px; }
+
+.footer{display: flex;flex-direction: column; align-items: center;padding-bottom: 100px;font-size: 0.9vw;}
+.f_menu{display: flex;align-items: center;}
+.f_menu>li{margin: 0 10px;}
+.f_menu>li:nth-child(1){font-weight: bold;}
+.f_menu>li img{height: 50px;}
+.f_logo{margin: 1vw 0;}
+.f_logo img{width: 5.4vw;}
+.f_txt{text-align: center;line-height: 200%;}
+.f_sns{display: flex;margin: 15px 0;}
+.f_sns>li{margin: 0 15px;}
+
+
+
+
+
+@media all and (max-width:800px){
+    .main_wrap>h2{font-size:14vw;}
+    .slide_box{width: 50vw;height:360px; }
+    .slide_box::before{left: -12vw;}
+    .slide_box::after{right: -12vw;}
+    .down_arr img{width: 7vw !important;}
+    .imgbox>img{width: 30vw !important;}
+
+    .conbox{height: 36vw !important;}
+    .conbox>a>img{height: 10vw !important;}
+    .contitle{width: 40vw;font-size: 4vw;color: #fff;}
+    .contitle::after{display: none;}
+    .footer{font-size: 3vw !important;}
+    .f_logo img{width: 17vw !important;}
+
+    .contitle>.slide-right::after{content: "＞";display: flex;width: 30px; height: 30px; border-radius: 50%;border: 1px solid #fff;justify-content: center;align-items: center; font-size: 10px;margin-top: 10px; }
+}
+
+@media all and (max-width:1024px){
+    .menu{display:none;}
+    .h_wrap{justify-content: space-between;max-width: 90vw;}
+    .logo{order: 2;width: 10vw;min-width: 80px;}
+    .nav{order: 3;width: auto;}
+    .family{width: 15vw;}
+    .m_nav{order: 1;display: block;}
+    .m_btn{width: 30px; height: 50px;display: flex;flex-direction: column; justify-content: space-evenly;border: none; background: none;}
+    .m_btn span{width: 90%; border-top:2px solid #000;}
+    .m_btn span:nth-child(2){width: 70%;}
+    
+    .mobile{position: fixed; left: 0; top: 0;width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);}
+    .m_menu{max-width:480px ; width: 75vw;background-color: #fff;height: 100%; box-sizing: border-box;padding: 10vh 5vw;position: relative;left: -480px;transition: all 0.3s;}
+    .active{left: 0;}
+
+    .m_close{width: 50px; height: 50px;position: absolute;right: 10px; top: 15px;background: none; border: none;}
+    .m_close span{display: block;border-top:2px solid #000; position: absolute;width: 40px;transform-origin: center center;}
+    .m_close span:nth-child(1){transform: rotate(45deg);}
+    .m_close span:nth-child(2){transform: rotate(-45deg);}
+
+    .m_lnb{font-size:5vw;line-height: 200%; font-weight: 500;margin-top: 10vh;position: relative;}
+    
+
+    .m_lnb>li:last-child{font-size: 3vw;text-decoration: underline;}
+    .sns{display: flex;margin-top: 30px;}
+    .sns>li{width: 5vw;margin-right: 2vw;}
+    .sns>li img{width: 100%;}
+
+    .m_sub{position: absolute;background-color: #fff;width:100% ; top: 0vw;font-size:4vw;line-height: 200%;}
+    .m_sub::before{content: '브랜드';font-size:6vw;line-height: 200%;}
+    .sub_close{position: absolute; top: -70px; cursor: pointer;z-index: 5;width: 50px; height: 70px; }
+    .sub_close img{width: 50px;}
+    .sub_close::after{content: 'Back';display: block;line-height: 0; font-size: 3vw;}
+
+    .slide_box{height:300px; }
+
+    .down_arr img{width: 5vw;}
+    .imgbox>img{width: 20vw;}
+
+    .conbox{height: 22vw;}
+    .conbox>a>img{height: 7vw ;}
+    .footer{font-size: 2vw;}
+    .f_logo img{width: 10vw;}
+}
